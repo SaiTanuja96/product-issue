@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>PRODUCT ISSUE</title>   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   
+</head>
+<body onload="fetchIssues()">
+   
+    <div class="container">
+    
+    <h1>PRODUCT ISSUE TRACKER <small>The smart solution </small></h1>
+    <div class="jumbotron">
+        <h3>Add issue</h3>
+        <form id="issueinputform">
+        <div class="formgroup">
+            <label for="issuedescription">Description</label>
+            <input type="text" class="form-control" id="issuedescription" placeholder="Describe your issue...">
+             </div>
+        
+        <div class="formgroup">
+            <label for="issueseverity">Severity</label>
+            <select id="issueseverity" class="form-control">
+            <option value="low">LOW</option>
+             <option value="medium">MEDIUM</option>
+             <option value="low">HIGH</option>
+            
+            </select>
+             </div>
+        
+        <div class="formgroup">
+            <label for="issueassignedTo"> Assigned to</label>
+            <input type="text" class="form-control" id="issueassignedTo" placeholder="Enter name...">
+             </div>
+            <br/>
+        <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+            </div>
+    <div class="col-lg-12" >
+        <div id="issueList">
+          </div>
+        <br/>
+        <br/>
+        
+  </div>
+     <div class="footer" >
+        
+        <p>&c productissue.com </p>
+        
+        
+        
+        </div>
+    
+    
+    
+    
+    
+    </div>
+    
+    
+    
+    
+     <script src="http://chancejs.com/chance.min.js"> </script>
+    
+    <!-- jquery -->
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+      <!-- javascript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html
